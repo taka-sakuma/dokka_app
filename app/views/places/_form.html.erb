@@ -1,0 +1,49 @@
+<%= form_for(@place) do |f| %>
+  <% if @place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@place.errors.count, "error") %> prohibited this place from being saved:</h2>
+
+      <ul>
+      <% @place.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :place_name %><br>
+    <%= f.text_field :place_name %>
+  </div>
+  <div class="field">
+    <%= f.label :place_discription %><br>
+    <%= f.text_area :place_discription %>
+  </div>
+  <div class="field">
+    <%= f.label :place_prefecture %><br>
+    <%= f.text_field :place_prefecture %>
+  </div>
+  <div class="field">
+    <%= f.label :place_city %><br>
+    <%= f.text_field :place_city %>
+  </div>
+  <div class="field">
+    <%= f.label :place_suit_climate %><br>
+    <%= f.text_field :place_suit_climate %>
+  </div>
+  <div class="field">
+    <%= f.label :place_cost %><br>
+    <%= f.number_field :place_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :place_parking_cost %><br>
+    <%= f.number_field :place_parking_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :place_pic_path %><br>
+    <%= f.text_field :place_pic_path %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

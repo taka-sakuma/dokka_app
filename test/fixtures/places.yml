@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place_name: MyString
+  place_discription: MyText
+  place_prefecture: MyString
+  place_city: MyString
+  place_suit_climate: MyString
+  place_cost: 1
+  place_parking_cost: 1
+  place_pic_path: MyString
+
+two:
+  place_name: MyString
+  place_discription: MyText
+  place_prefecture: MyString
+  place_city: MyString
+  place_suit_climate: MyString
+  place_cost: 1
+  place_parking_cost: 1
+  place_pic_path: MyString

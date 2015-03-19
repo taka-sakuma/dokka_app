@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Place name:</strong>
+  <%= @place.place_name %>
+</p>
+
+<p>
+  <strong>Place discription:</strong>
+  <%= @place.place_discription %>
+</p>
+
+<p>
+  <strong>Place prefecture:</strong>
+  <%= @place.place_prefecture %>
+</p>
+
+<p>
+  <strong>Place city:</strong>
+  <%= @place.place_city %>
+</p>
+
+<p>
+  <strong>Place suit climate:</strong>
+  <%= @place.place_suit_climate %>
+</p>
+
+<p>
+  <strong>Place cost:</strong>
+  <%= @place.place_cost %>
+</p>
+
+<p>
+  <strong>Place parking cost:</strong>
+  <%= @place.place_parking_cost %>
+</p>
+
+<p>
+  <strong>Place pic path:</strong>
+  <%= @place.place_pic_path %>
+</p>
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>
