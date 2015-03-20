@@ -14,6 +14,7 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/new
   def new
+    @place = Place.find(params[:place_id])
     @activity = Activity.new
   end
 
